@@ -14,9 +14,12 @@ indent_style = tab
 [{Makefile, *.mk}]
 indent_style = tab
 
-[*.proto]
+[{*yaml, *.proto}]
 indent_size = 2
 
-[{*.yaml, *.yml}]
-indent_style = space
-indent_size = 2
+[{go.mod, go.sum}]
+indent_size = 4
+indent_style = tab
+
+[*.md]
+trim_trailing_whitespace = false
